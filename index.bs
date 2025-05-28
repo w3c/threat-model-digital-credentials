@@ -1,6 +1,6 @@
 <pre class='metadata'>
 Title: Threat Model for Decentralized Credentials
-Status: w3c/NOTE-WD
+Status: w3c/ED
 ED: https://w3c.github.io/threat-model-decentralized-credentials
 Shortname: threat-model-decentralized-credentials
 Issue Tracking: GitHub https://github.com/w3c/threat-model-decentralized-credentials/issues?q=is%3Aissue+is%3Aopen+%5Bdecentralized-identities%5D
@@ -39,11 +39,11 @@ It is intended to be a choral analysis. It stems from the need to understand a T
 
 For Identity, we can refer to the definition in ISO/IEC 24760-1:2019 "[IT Security and Privacy - A framework for identity management](https://standards.iso.org/ittf/PubliclyAvailableStandards/c077582_ISO_IEC_24760-1_2019(E).zip)".
 
-**Identity** is “_a set of attributes related to an entity_”. Where the entity is something "_that has recognizably distinct existence_", and that can be "_logical or physical_" such as "_a person, an organization, a device, a group of such items, a human subscriber to a telecom service, a SIM card, a passport, a network interface card, a software application, a service or a website_" and the attributes are “_characteristics or properties_” such as “_an entity type, address information, telephone number, a privilege, a MAC address, a domain name_”.
+**Identity** is _a set of attributes related to an entity_. Where the entity is something _that has recognizably distinct existence_, and that can be _logical or physical_ such as _a person, an organization, a device, a group of such items, a human subscriber to a telecom service, a SIM card, a passport, a network interface card, a software application, a service or a website_ and the attributes are _characteristics or properties_ such as _an entity type, address information, telephone number, a privilege, a MAC address, a domain name_.
 
 We present **credentials** to claim that we have a certain identity, whether in the physical or digital world. Just as we do not have a one-size-fits-all definition of identity, we also do not have a one-size-fits-all definition of credentials in IT, as it changes according to context.
 
-The credential definition from the W3C Verifiable Credentials Data Model (VCDM) states: “a _set of one or more claims made by an issuer._” Its framing is in the Decentralized Identity Model, and we can map the ISO’s _attributes_ to VCDM _claims_.
+The credential definition from the W3C Verifiable Credentials Data Model (VCDM) states: a _set of one or more claims made by an issuer._ Its framing is in the Decentralized Identity Model, and we can map the ISO’s _attributes_ to VCDM _claims_.
 
 Taking the example of a person, these characteristics can be physical appearance, voice, a set of beliefs, habits, and so on. It is important to distinguish identity from the identifier (e.g., a user name).
 
