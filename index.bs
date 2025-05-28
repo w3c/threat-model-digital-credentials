@@ -260,7 +260,7 @@ One effective, though inefficient, approach to threat modeling is to cycle the v
   - *Threat*: We are generally driven to think of this as a threat to the Holder and linking its attributes, but per se, even an _Issuer_ can have the problem of tracking its users. This applies to a _Verifier_ (or a group of Verifiers) and an external third party observing the various exchanges or the Revocation list.
   - *Mitigations*:
     - Use Signature Blinding.
-      The _Verifier_ should request the following: Range Proof, Predicate Proof, Selective Disclosure, and the credential.
+    - The _Verifier_ should request the following: Range Proof, Predicate Proof, Selective Disclosure, and the credential.
     - The _Issuer_ should use an anonymous revocation method such as Cryptographic Accumulators.
     - The _Issuer_ should use random identifiers when generating the credential.
     - When interacting with the Verifier, the Holder should always use rotational and random identifiers specific to that interaction session.
