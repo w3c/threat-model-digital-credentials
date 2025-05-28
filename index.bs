@@ -1,9 +1,9 @@
 <pre class='metadata'>
 Title: Threat Model for Decentralized Credentials
-Status: w3c/CG-DRAFT
-ED: https://w3c-cg.github.io/threat-modeling/decentralized-identity/
-Shortname: threat-model-decentralized-identities
-Issue Tracking: GitHub https://github.com/w3c-cg/threat-modeling/issues?q=is%3Aissue+is%3Aopen+%5Bdecentralized-identities%5D
+Status: w3c/ED
+ED: https://w3c.github.io/threat-model-decentralized-credentials
+Shortname: threat-model-decentralized-credentials
+Issue Tracking: GitHub https://github.com/w3c/threat-model-decentralized-credentials/issues?q=is%3Aissue+is%3Aopen+%5Bdecentralized-identities%5D
 Level: 1
 Editor: Simone Onofri, w3cid 38211, W3C, https://w3.org, simone@w3.org
 Editor: Amir Sharif, w3cid 157587, Invited Expert
@@ -13,9 +13,9 @@ Status Text:
   <p>This outlines the many concerns related to these work areas and the initial principles for addressing user considerations for starting a discussion.</p>
 Markup Shorthands: markdown on, biblio yes
 Boilerplate: omit issues-index, omit conformance, repository-issue-tracking off
-Group: tmcg
-Mailing List: public-tmcg@w3.org
-Mailing List Archives: https://lists.w3.org/Archives/Public/public-tmcg/
+Group: security
+Mailing List: public-security@w3.org
+Mailing List Archives: https://lists.w3.org/Archives/Public/public-security/
 </pre>
 
 # Introduction
