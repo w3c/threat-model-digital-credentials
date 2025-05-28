@@ -1,6 +1,6 @@
 <pre class='metadata'>
 Title: Threat Model for Decentralized Credentials
-Status: w3c/ED
+Status: w3c/NOTE-WD
 ED: https://w3c.github.io/threat-model-decentralized-credentials
 Shortname: threat-model-decentralized-credentials
 Issue Tracking: GitHub https://github.com/w3c/threat-model-decentralized-credentials/issues?q=is%3Aissue+is%3Aopen+%5Bdecentralized-identities%5D
