@@ -8,7 +8,7 @@
   <meta content="Bikeshed version 9a7a6709a, updated Tue May 27 16:45:34 2025 -0700" name="generator">
   <link href="https://w3c.github.io/threat-model-decentralized-credentials" rel="canonical">
   <link href="https://www.w3.org/2008/site/images/favicon.ico" rel="icon">
-  <meta content="2e7c75f7f5faa1538cafb564b7eab9ca5e640a31" name="revision">
+  <meta content="04017992be927ce0a912eeb309b0930d87d71e52" name="revision">
   <meta content="dark light" name="color-scheme">
   <link href="https://www.w3.org/StyleSheets/TR/2021/dark.css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css">
 <style>/* Boilerplate: style-autolinks */
@@ -516,9 +516,9 @@ Therefore, it is important to carry over these properties later into the specifi
    <p>It is intended to be a choral analysis. It stems from the need to understand a Threat Model to guide the development of Decentralized Identities in a secure/privacy-preserving way and avoid harm. It will start from the Digital Credentials API from a high-level perspective.</p>
    <h4 class="heading settled" data-level="1.1.1" id="terminology"><span class="secno">1.1.1. </span><span class="content">Terminology</span><a class="self-link" href="#terminology"></a></h4>
    <p>For Identity, we can refer to the definition in ISO/IEC 24760-1:2019 "<a href="https://standards.iso.org/ittf/PubliclyAvailableStandards/c077582_ISO_IEC_24760-1_2019(E).zip">IT Security and Privacy - A framework for identity management</a>".</p>
-   <p><strong>Identity</strong> is “_a set of attributes related to an entity_”. Where the entity is something "_that has recognizably distinct existence_", and that can be "_logical or physical_" such as "_a person, an organization, a device, a group of such items, a human subscriber to a telecom service, a SIM card, a passport, a network interface card, a software application, a service or a website_" and the attributes are “_characteristics or properties_” such as “_an entity type, address information, telephone number, a privilege, a MAC address, a domain name_”.</p>
+   <p><strong>Identity</strong> is _a set of attributes related to an entity_. Where the entity is something _that has recognizably distinct existence_, and that can be _logical or physical_ such as _a person, an organization, a device, a group of such items, a human subscriber to a telecom service, a SIM card, a passport, a network interface card, a software application, a service or a website_ and the attributes are _characteristics or properties_ such as _an entity type, address information, telephone number, a privilege, a MAC address, a domain name_.</p>
    <p>We present <strong>credentials</strong> to claim that we have a certain identity, whether in the physical or digital world. Just as we do not have a one-size-fits-all definition of identity, we also do not have a one-size-fits-all definition of credentials in IT, as it changes according to context.</p>
-   <p>The credential definition from the W3C Verifiable Credentials Data Model (VCDM) states: “a _set of one or more claims made by an issuer._” Its framing is in the Decentralized Identity Model, and we can map the ISO’s _attributes_ to VCDM _claims_.</p>
+   <p>The credential definition from the W3C Verifiable Credentials Data Model (VCDM) states: a _set of one or more claims made by an issuer._ Its framing is in the Decentralized Identity Model, and we can map the ISO’s _attributes_ to VCDM _claims_.</p>
    <p>Taking the example of a person, these characteristics can be physical appearance, voice, a set of beliefs, habits, and so on. It is important to distinguish identity from the identifier (e.g., a user name).</p>
    <p>It is usual to think of Digital Credentials as related to humans, particularly those issued by a government, also known as "Real-world Identities", even if we also have Non-Human Identities.</p>
    <p>This leads to a broader consideration of the Threat Model, as it also includes Privacy as a right and Harm components.</p>
