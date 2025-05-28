@@ -1,5 +1,5 @@
 <pre class='metadata'>
-Title: Threat Model for Decentralized Identities
+Title: Threat Model for Decentralized Credentials
 Status: w3c/CG-DRAFT
 ED: https://w3c-cg.github.io/threat-modeling/decentralized-identity/
 Shortname: threat-model-decentralized-identities
@@ -8,7 +8,7 @@ Level: 1
 Editor: Simone Onofri, w3cid 38211, W3C, https://w3.org, simone@w3.org
 Editor: Amir Sharif, w3cid 157587, Invited Expert
 Abstract:
-  <p>This document is the live "meta" Threat Model related to Decentralized Identities, focusing on Digital Credentials.</p>
+  <p>This document is the live "meta" Threat Model related to Decentralized Credentials.</p>
 Status Text: 
   <p>This outlines the many concerns related to these work areas and the initial principles for addressing user considerations for starting a discussion.</p>
 Markup Shorthands: markdown on, biblio yes
