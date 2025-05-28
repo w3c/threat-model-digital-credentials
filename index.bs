@@ -13,7 +13,7 @@ Status Text:
   <p>This outlines the many concerns related to these work areas and the initial principles for addressing user considerations for starting a discussion.</p>
 Markup Shorthands: markdown on, biblio yes
 Boilerplate: omit issues-index, omit conformance, repository-issue-tracking off
-Group: security
+Group: w3c/security
 Mailing List: public-security@w3.org
 Mailing List Archives: https://lists.w3.org/Archives/Public/public-security/
 </pre>
