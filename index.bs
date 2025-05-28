@@ -105,7 +105,7 @@ To create a good Threat Model, we can first consider the components of the Decen
 - We have a *Verifier* who verifies the Holder's credentials to give access to a resource or a service.
 - We also have a *Verifiable Data Registry* (VDR) that stores identifiers and schemas.
 
-<img src="https://www.w3.org/reports/identity-web-impact/figures/decentralized-identity-model.svg">
+<img alt="Decentralized Identity Model" ="https://www.w3.org/reports/identity-web-impact/figures/decentralized-identity-model.svg">
 
 Interactions between actors occur normatively through software or other technological mediums. We will generically call *Agents* such components. One agent might be embedded in a *Wallet* (the component that contains the *Holder's* credentials), and another might be a Browser (which, by definition, is a user agent).
 
