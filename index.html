@@ -5,10 +5,10 @@
   <title>Threat Model for Decentralized Credentials</title>
   <meta content="ED" name="w3c-status">
   <link href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED" rel="stylesheet">
-  <meta content="Bikeshed version 9a7a6709a, updated Tue May 27 16:45:34 2025 -0700" name="generator">
+  <meta content="Bikeshed version 3f621ba99, updated Mon Jul 28 15:38:36 2025 -0700" name="generator">
   <link href="https://w3c.github.io/threat-model-decentralized-credentials" rel="canonical">
   <link href="https://www.w3.org/2008/site/images/favicon.ico" rel="icon">
-  <meta content="a34aac74b71a8dbe6327b51f6baa907b55ea65e7" name="revision">
+  <meta content="f7c35c01da6f3748fb0648465fb7f70f16285526" name="revision">
   <meta content="dark light" name="color-scheme">
   <link href="https://www.w3.org/StyleSheets/TR/2021/dark.css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css">
 <style>/* Boilerplate: style-autolinks */
@@ -411,9 +411,13 @@ dfn > a.self-link::before      { content: "#"; }
 </style>
  <body class="h-entry">
   <div class="head">
-   <p data-fill-with="logo"><a class="logo" href="https://www.w3.org/"> <img alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72"> </a> </p>
+   <p data-fill-with="logo"><a class="logo" href="https://www.w3.org/">
+    <img alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
+</a>
+</p>
    <h1 class="p-name no-ref" id="title">Threat Model for Decentralized Credentials</h1>
-   <p id="w3c-state"><a href="https://www.w3.org/standards/types/#ED">Editor’s Draft</a>, <time class="dt-updated" datetime="2025-05-31">31 May 2025</time></p>
+   <p id="w3c-state"><a href="https://www.w3.org/standards/types/#ED">Editor’s Draft</a>,
+    <time class="dt-updated" datetime="2025-08-26">26 August 2025</time></p>
    <details open>
     <summary>More details about this document</summary>
     <div data-fill-with="spec-metadata">
@@ -431,7 +435,8 @@ dfn > a.self-link::before      { content: "#"; }
     </div>
    </details>
    <div data-fill-with="warning"></div>
-   <p class="copyright" data-fill-with="copyright"><a href="https://www.w3.org/policies/#copyright">Copyright</a> © 2025 <a href="https://www.w3.org/">World Wide Web Consortium</a>. <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup> <a href="https://www.w3.org/policies/#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/policies/#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/copyright/software-license/" rel="license" title="W3C Software and Document License">permissive document license</a> rules apply. </p>
+   <p class="copyright" data-fill-with="copyright"><a href="https://www.w3.org/policies/#copyright">Copyright</a> © 2025 <a href="https://www.w3.org/">World Wide Web Consortium</a>. <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup> <a href="https://www.w3.org/policies/#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/policies/#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/copyright/software-license/" rel="license" title="W3C Software and Document License">permissive document license</a> rules apply.
+</p>
    <hr title="Separator for header">
   </div>
   <div class="p-summary" data-fill-with="abstract">
@@ -680,7 +685,7 @@ Therefore, it is important to carry over these properties later into the specifi
      <p><strong>Securing Mechanisms:</strong> Each mechanism may or may not support different privacy features or be quantum-resistant:</p>
     <li data-md>
      <p><strong>Enveloped Formats (Credential Formats)</strong>: The proof wraps around the serialization of the credential. \
-JSONs are enveloped using JSON Object Signing and Encryption (<a href="https://datatracker.ietf.org/wg/jose/about/">JOSE</a>), and we can find JWT, JWS, and JWK here. JOSE is _cryptographically agile_ (as it can fit different cryptographic primitives) and can also have Selective Disclosure (SD) with <a href="https://www.ietf.org/archive/id/draft-fett-oauth-selective-disclosure-jwt-02.html">SD-JWT</a> (which uses HMAC). New securing mechanisms are coming up, like <a href="https://arxiv.org/abs/2406.19035">SD-BLS</a> (which uses BLS), and ongoing efforts to fit BBS#. \
+JSONs are enveloped using JSON Object Signing and Encryption (<a href="https://datatracker.ietf.org/wg/jose/about/">JOSE</a>), and we can find JWT, JWS, and JWK here. JOSE is _cryptographically agile_ (as it can fit different cryptographic primitives) and can also have Selective Disclosure (SD) with  <a href="https://www.ietf.org/archive/id/draft-fett-oauth-selective-disclosure-jwt-02.html">SD-JWT</a> (which uses HMAC). New securing mechanisms are coming up, like <a href="https://arxiv.org/abs/2406.19035">SD-BLS</a> (which uses BLS), and ongoing efforts to fit BBS#. \
 CBORs are enveloped using CBOR Object Signing and Encryption (<a href="https://www.rfc-editor.org/rfc/rfc9052">COSE</a>). \
 Other formats include _mdoc_ and _<a href="https://datatracker.ietf.org/wg/spice/about/">SPICE</a>_. \
 The mechanism to use VCDM with JOSE/COSE is described in <a href="https://www.w3.org/TR/vc-jose-cose/">Securing Verifiable Credentials using JOSE and COSE</a>.</p>
@@ -689,7 +694,7 @@ The mechanism to use VCDM with JOSE/COSE is described in <a href="https://www.w3
     <li data-md>
      <p><strong>Status Information (Revocation Algorithms)</strong>: _Issuers_ can implement several ways to keep up to date the status of the credential, such as Revocation List, Status List (e.g., <a href="https://www.w3.org/TR/vc-bitstring-status-list/">Bitstring Status List v1.0</a>), Cryptographic Accumulators, etc.</p>
     <li data-md>
-     <p><strong>Communication Protocols</strong>: for the different phases of Issuance and Presentation (e.g., <a href="https://openid.github.io/OpenID4VCI/openid-4-verifiable-credential-issuance-wg-draft.html">OID4VCI</a>, <a href="https://openid.net/specs/openid-4-verifiable-presentations-1_0.html%5D">OID4VP</a>, <a href="https://openid.net/specs/openid-connect-self-issued-v2-1_0.html">SIOPv2</a>).</p>
+     <p><strong>Communication Protocols</strong>: for the different phases of Issuance and Presentation (e.g.,  <a href="https://openid.github.io/OpenID4VCI/openid-4-verifiable-credential-issuance-wg-draft.html">OID4VCI</a>, <a href="https://openid.net/specs/openid-4-verifiable-presentations-1_0.html%5D">OID4VP</a>, <a href="https://openid.net/specs/openid-connect-self-issued-v2-1_0.html">SIOPv2</a>).</p>
    </ul>
    <h4 class="heading settled" data-level="2.1.5" id="assets"><span class="secno">2.1.5. </span><span class="content">Assets</span><a class="self-link" href="#assets"></a></h4>
    <p>Assuming that the main asset is the credential and information derived during its life cycle, we can consider the protection of its three Privacy Properties, as they were defined by <a href="http://www.links.org/files/selective-disclosure.pdf">Ben Laurie</a>, as the basis:</p>
@@ -1098,7 +1103,7 @@ The _Verifier_ should request the following: Range Proof, Predicate Proof, Selec
        <p>Use a decentralized VDR for verification</p>
      </ul>
     <li data-md>
-     <p><strong>Elevation of privilege</strong> (Threats to Authorization):</p>
+     <p><strong>Elevation of privilege</strong>  (Threats to Authorization):</p>
      <ul>
       <li data-md>
        <p><em>Description</em>: Allowing someone to do something they are not authorized to do</p>
