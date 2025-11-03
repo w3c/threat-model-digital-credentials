@@ -8,9 +8,7 @@ Level: 1
 Editor: Simone Onofri, w3cid 38211, W3C, https://w3.org, simone@w3.org
 Editor: Amir Sharif, w3cid 157587, Invited Expert, https://fbk.eu, asharif@fbk.eu
 Abstract:
-  <p>This document is the live "meta" Threat Model related to Decentralized Credentials.</p>
-Status Text: 
-  <p>This outlines the many concerns related to these work areas and the initial principles for addressing user considerations for starting a discussion.</p>
+  <p>This document is the live "meta" Threat Model related to Decentralized Credentials.  This outlines the many concerns related to these work areas and the initial principles for addressing user considerations for starting a discussion.</p>
 Markup Shorthands: markdown on, biblio yes
 Boilerplate: omit issues-index, omit conformance, repository-issue-tracking off
 Group: securityig
